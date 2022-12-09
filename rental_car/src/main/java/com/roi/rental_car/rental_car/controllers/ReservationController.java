@@ -19,7 +19,7 @@ public class ReservationController{
     public List<ReservationDTO> getAll(){return reservationService.getAll();}
      @PostMapping
     public ReservationDTO createReservation(@RequestBody ReservationDTO reservationDTO){
-        return reservationService.createReservation(reservationDTO);
+        return reservationService.create(reservationDTO);
      }
      @PutMapping
     public  ReservationDTO updateReservation(@RequestBody ReservationDTO reservationDTO){
@@ -29,7 +29,4 @@ public class ReservationController{
     public String deleteReservation(@PathVariable Long id){
         return reservationService.deleteReservation(id);
     }
-
-
-
 }

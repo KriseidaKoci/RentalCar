@@ -7,8 +7,6 @@ import java.util.List;
 @Entity
 @Data
 public class Car {
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long carId;

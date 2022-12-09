@@ -2,10 +2,11 @@ package com.roi.rental_car.rental_car.mappers;
 
 import com.roi.rental_car.rental_car.dto.RevenueDTO;
 import com.roi.rental_car.rental_car.entities.Revenue;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class RevenueMapper implements  BaseMapper <Revenue, RevenueDTO>{
     @Override
     public RevenueDTO toDto(Revenue revenue) {

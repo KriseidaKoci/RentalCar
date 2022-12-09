@@ -16,7 +16,8 @@ public interface BranchRepo extends JpaRepository<Branch, Long> {
     Branch getByName(@Param("name") String branchName);
     Branch getBranchByNameAndCity_Name(String name, String cityName);// krijohet query on runtime , nga JPA
     Branch getById(@Param("id") Long id);
-    boolean existsBranchByName(String name);
     Branch getBranchByName(String name);
+    boolean existsBranchByBranchId (Long id);
+
     boolean existsBranchByNameIgnoreCase(String name);
 }

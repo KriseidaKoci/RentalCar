@@ -2,10 +2,11 @@ package com.roi.rental_car.rental_car.mappers;
 
 import com.roi.rental_car.rental_car.dto.UnavailableStatusDTO;
 import com.roi.rental_car.rental_car.entities.UnavailableStatus;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class UnavailableStatusMapper implements BaseMapper <UnavailableStatus, UnavailableStatusDTO>{
     @Override
     public UnavailableStatusDTO toDto(UnavailableStatus unavailableStatus) {
